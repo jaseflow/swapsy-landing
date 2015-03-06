@@ -1,15 +1,8 @@
 @import 'variables.styl'
 @import 'reset.styl'
 
-*::shadow *
 *
     box-sizing: border-box
-
-:host
-    display: block
-
-*:unresolved
-    display: none
 
 html
 body
@@ -26,10 +19,6 @@ h1
 h2
 h3
 h4
-html /deep/ h1
-html /deep/ h2
-html /deep/ h3
-html /deep/ h4
     margin: 0
     color: #fff
     font-weight: 600
@@ -38,7 +27,6 @@ html /deep/ h4
 strong
     font-weight: 500
 
-html /deep/ .title
 .title
     font-weight: 100
     color: #fff
@@ -46,7 +34,6 @@ html /deep/ .title
     margin: 0
     margin-bottom: $spacing
 
-html /deep/ .tiny-title
 .tiny-title
     font-size: 12px
     text-transform: uppercase
@@ -66,15 +53,12 @@ ul
 .text-centered
     text-align: center
 
-html /deep/ .brand-ps
 .brand-ps
     color: $blue
 
-html /deep/ .brand-xbox
 .brand-xbox
     color: $green
 
-html /deep/ .brand-nintendo
 .brand-nintendo
     color: $red
 
@@ -116,7 +100,6 @@ html /deep/ .brand-nintendo
 
 // Buttons
 
-html /deep/ .btn
 .btn
     display: flex
     font-family: $font
@@ -136,33 +119,27 @@ html /deep/ .btn
     transition: all 0.25s ease
     border: 0
 
-html /deep/ .btn--primary
 .btn--primary
     background: $primary
     color: #fff
 
-html /deep/ .btn--block
 .btn--block
     width: 100%
 
-html /deep/ .btn--small
 .btn--small
     height: 36px
     font-size: 12px
     width: 100%
 
-html /deep/ .btn[disabled]
 .btn[disabled]
     background-color: rgba(255,255,255,0.1)
     color: rgba(255,255,255,0.2)
     cursor: default
 
-html /deep/ .btn--secondary
 .btn--secondary
     background: #fff
     color: #444
 
-html /deep/ .btn--outline
 .btn--outline
     border: 1px solid $blue
     background: transparent
@@ -231,7 +208,6 @@ html /deep/ .btn--outline
 .checkbox--nintendo input:checked
     background: $red
 
-html /deep/ .input
 .input
     box-sizing: border-box
     width: 100%
