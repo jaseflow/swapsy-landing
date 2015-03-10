@@ -9,7 +9,9 @@ body
     line-height: 1.5
     font-size: 18px
     font-weight: 300
-    padding-top: calc(100vh - 120px)
+
+.content
+    background-color: $bg-1
 
 .logo
     display: flex
@@ -29,12 +31,9 @@ body
         margin-right: 20px
 
 .hero
-    min-height: 100vh
+    min-height: 600px
+    position: relative
     padding-top: 200px
-    position: absolute
-    width: 100%
-    top: 0
-    left: 0
     &:before
         display: block
         content: ''
@@ -44,15 +43,17 @@ body
         height: 200px
         width: 100%
         background: linear-gradient(rgba(0,0,0,0),$bg-1)
+    .center
+        position: relative
+        z-index: 200
+        max-width: 600px
+        margin: 0 auto
+        .btn
+            max-width: 200px
+            margin: 0 auto
 
 .info
     padding-bottom: ($spacing)
-
-.center
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
 
 .text-centered
     text-align: center
